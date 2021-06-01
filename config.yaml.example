@@ -1,0 +1,24 @@
+---
+discord_key: <Your Key>
+setup:
+  755231190134554696:  # Server ID; can be added/changed by settings
+    credentials:
+      API Key: abc123
+      API Secret: def456
+      Access Token: ghi789
+      Access Secret: xyz012
+    trello:
+      idBoard: abc123
+      idList: def456
+      key: ghi789
+      token: xyz012
+    allowed: {
+      channels: [], # List of channels allowed to interact
+      roles: [], # List of roles allowed to interact
+      users: [] # Custom list of users allowed to interact
+    },
+    search: {
+      enabled: False,
+      terms: [] # List of terms for live streaming
+    },
+    votes_needed: 1
