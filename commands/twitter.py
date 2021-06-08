@@ -255,6 +255,11 @@ class Twitter(commands.Cog, name='Twitter', description="Twitter Interaction"):
                 return await ctx.channel.send('I do not have access to this message. Please repost.')
 
         message_content = message_ref.content
+
+        username_matches = re.findall("`@.*?`", message_ref.content)
+        for match in username_matches:
+            message_content = message_content.replace(match, match.strip('`').strip())
+
         message_length = len(message_content)
 
         embed = discord.Embed(color=0x4aa1eb, title='Tweet Preview', description=message_content)
