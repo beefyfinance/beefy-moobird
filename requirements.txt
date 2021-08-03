@@ -1,5 +1,5 @@
 discord==1.0.1
 discord.py==1.7.1
 PyYAML==5.4.1
-tweepy@git+https://github.com/tweepy/tweepy.git@async-streaming
+tweepy@git+https://github.com/tweepy/tweepy.git
 emoji~=1.2.0

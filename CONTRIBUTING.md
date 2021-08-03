@@ -15,7 +15,7 @@ As a contributor, you are expected to fork this repository, work on your own for
 cd beefy-moobird
 git remote add upstream https://github.com/beefyfinance/beefy-moobird.git
 git fetch upstream
-git pull --rebase upstream master
+git pull --rebase upstream main
 ```
 NOTE: The directory `beefy-moobird` represents your fork's local copy.
 
